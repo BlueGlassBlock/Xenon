@@ -65,7 +65,7 @@ def get_session(con: console.Console) -> Session:
                 }
                 cfg = SessionConfig(**data)
             except Exception as e:
-                con.output(f"{e}: {e.args}")
+                con.output(f"{repr(e)}")
             else:
                 flag = False
     return Session(**cfg.dict())

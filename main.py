@@ -8,6 +8,7 @@ from graia.broadcast import Broadcast
 from graia.scheduler import GraiaScheduler
 from typing import cast
 
+
 import lib
 
 if __name__ == "__main__":
