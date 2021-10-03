@@ -8,6 +8,7 @@
 [![Code Style](https://img.shields.io/badge/code%20style-black-black)](http://github.com/psf/black)
 [![Documentation Status](https://readthedocs.org/projects/xenon-bot/badge/?version=latest)](https://xenon-bot.readthedocs.io/zh_CN/latest/?badge=latest)
 ![Version](https://img.shields.io/badge/version-0.5.0--beta-brightgreen)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlueGlassBlock%2FXenon.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlueGlassBlock%2FXenon?ref=badge_shield)
 
 ## 许可证
 Xenon 在与 [Mirai](https://github.com/mamoe/mirai) 和
@@ -20,3 +21,7 @@ Xenon 使用 [语义化版本2.0.0](https://semver.org/lang/zh-CN/spec/v2.0.0.ht
 
 ## 文档
 Xenon 的文档在 [此处](https://xenon-bot.readthedocs.io/zh_CN/latest/) 可用。
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FBlueGlassBlock%2FXenon.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FBlueGlassBlock%2FXenon?ref=badge_large)
