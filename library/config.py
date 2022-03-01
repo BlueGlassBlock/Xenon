@@ -1,3 +1,4 @@
+from loguru import logger
 import toml
 from pydantic import BaseModel
 
@@ -14,8 +15,13 @@ class XConfig(BaseModel):
     def __init__(self):
         path = config.joinpath(f"{self.__dest__}.toml")
         path.touch(exist_ok=True)
-        value = toml.loads(path.read_text())
-        for key in self.__scope__.split("."):
-            if key:
-                value = value[key]
+        text = path.read_text(encoding="utf-8")
+        value = toml.loads(text)
+        try:
+            for key in self.__scope__.split("."):
+                if key:
+                    value = value[key]
+        except KeyError:
+            logger.critical(f"{path} 没有 {self.__scope__} 节点")
+            raise
         super().__init__(**value)

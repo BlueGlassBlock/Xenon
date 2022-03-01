@@ -19,9 +19,9 @@ from library.config import XConfig
 class SessionConfig(XConfig):
     __scope__: str = "session"
     __dest__: str = "global"
-    host: AnyHttpUrl
-    account: int
-    verify_key: str
+    host: AnyHttpUrl = ""
+    account: int = ""
+    verify_key: str = ""
 
 
 if __name__ == """__main__""":
